@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {updateMatrix} from '../helper_functions/matrix_calculation'
 const Matrix = (props) => {
-  const matrixLength = 50
+  const matrixLength = 50;
   const [matrix, setMatrix] = useState(
     [...Array(matrixLength)].map(() => [...Array(matrixLength).fill(null).map(()=>Math.round(Math.random()))])
-
   );
 
   const useInterval = (callback, delay) => {

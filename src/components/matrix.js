@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {updateMatrix} from '../helper_functions/matrix_calculation'
 const Matrix = (props) => {
-  const matrixLength = 50;
+  const matrixLength = 40;
   const [matrix, setMatrix] = useState(
     [...Array(matrixLength)].map(() => [...Array(matrixLength).fill(null).map(()=>Math.round(Math.random()))])
   );
@@ -35,7 +35,7 @@ const Matrix = (props) => {
   return (
     <div style={{marginBottom:30}}>
 
-<h1>Seeking Alpha Home Task</h1>
+<h1>In memory of John Horton Conway</h1>
 
     {matrix.map((row,i) => {
       return <div style={{display:'flex',justifyContent: 'center'}} key={i}>
